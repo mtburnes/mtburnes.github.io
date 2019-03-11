@@ -1,24 +1,41 @@
+body {
+	font: 400 18px/1.75 'Roboto', sans-serif;
+	background: #081823;
+	color: #e0e3e6;
+	padding: 0 8px;
+}
 
+main {
+	max-width: 40em;
+	margin: 5em auto;
+}
 
 h1, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-	color:#6795be;
-	text-align:center;
-}
-h2{
-	font-family: 'Montserrat', sans-serif;
-	color:#8cb5ff;
-	text-align:center;
-}
-body{
-	font-family: 'Roboto', sans-serif;
-	font-size: 25px;
-	background: #2a2a2a;
-	color:#58748d;
-	text-align:center;
-
+	font-weight: 600;
 }
 
-a{
-	color: #6795be;
+a {
+	color: #45a4e8;
+}
+
+.contact-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.contact-category {
+	display: inline-block;
+	min-width: 3.5em;
+}
+
+footer {
+	font-size: 0.6em;
+	text-align: right;
+}
+
+@media (max-height: 400px) {
+	main {
+		margin: 1em auto;
+	}
 }
