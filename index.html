@@ -1,75 +1,24 @@
 <!DOCTYPE html>
-<!-- saved from url=(0037)https://mtburnes.dev/#github-mtburnes -->
-<html lang="en-US" data-cbscriptallow="true"><script>(function () {
-  var overwrite = function (name) {
-    const OLD = HTMLCanvasElement.prototype[name];
-    Object.defineProperty(HTMLCanvasElement.prototype, name, {
-      "value": function () {
-        var shift = {
-          'r': Math.floor(Math.random() * 10) - 5,
-          'g': Math.floor(Math.random() * 10) - 5,
-          'b': Math.floor(Math.random() * 10) - 5,
-          'a': Math.floor(Math.random() * 10) - 5
-        };
-        var width = this.width, height = this.height, context = this.getContext("2d");
-        var imageData = context.getImageData(0, 0, width, height);
-        for (var i = 0; i < height; i++) {
-          for (var j = 0; j < width; j++) {
-            var n = ((i * (width * 4)) + (j * 4));
-            imageData.data[n + 0] = imageData.data[n + 0] + shift.r;
-            imageData.data[n + 1] = imageData.data[n + 1] + shift.g;
-            imageData.data[n + 2] = imageData.data[n + 2] + shift.b;
-            imageData.data[n + 3] = imageData.data[n + 3] + shift.a;
-          }
-        }
-        window.top.postMessage("canvas-fingerprint-defender-alert", '*');
-        context.putImageData(imageData, 0, 0);
-        return OLD.apply(this, arguments);
-      }
-    });
-  };
-  overwrite('toBlob');
-  overwrite('toDataURL');
-  document.documentElement.dataset.cbscriptallow = true;
-})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Michael Burnes | mtburnes.github.io</title>
-<meta name="generator" content="Jekyll v3.7.4">
-<meta property="og:title" content="Michael Burnes">
-<meta property="og:locale" content="en_US">
+<!--Nothing here except high-school garbage. Check later for some potential sleek design... -->
+<html lang="en-US" data-cbscriptallow="true">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Roboto:500" rel="stylesheet">
+<title>Michael Burnes</title>
 <link rel="canonical" href="http://mtburnes.dev/">
-<meta property="og:url" content="http://mtburnes.dev/">
-<meta property="og:site_name" content="mtburnes.github.io">
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://mtburnes.dev/","headline":"Michael Burnes","name":"mtburnes.github.io","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <style class="anchorjs"></style><link rel="stylesheet" href="./Michael Burnes _ mtburnes.github.io_files/style.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
-      <h1>mtburnes.dev</h1>
-      
-
-      <h1>Michael Burnes</h1>
-      <h3>This website is under construction.</h3>
-      <h5>Please stand by as I eventually create a good looking website.</h5>
-      <h6>Contact me at</h6>
-      <h6>email: me@mtburnes.dev</h6>
-      <h6>github: @mtburnes</h6>
-      <p>######</p>
-
-
-      
-    </div>
-    <script src="./Michael Burnes _ mtburnes.github.io_files/anchor.min.js.download" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    
-  
-
-</body></html>
+      <h1><a href="https://mtburnes.dev">mtburnes.dev</a></h1></h1>
+      </div>
+      <body>
+      <p>Michael Burnes</p> 
+      <p>This website is under construction.</p>
+      <p>Please stand by as I eventually create a good looking website.</p>
+      <h1>Contact me at: </h1>
+      <p>email: <a href="mailto:me@mtburnes.dev">me@mtburnes.dev</a></p>
+      <p>github: <a href="https://github.com/mtburnes">@mtburnes</a></p>
+    </body>      
+  </div>
+</html>
