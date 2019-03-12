@@ -4,6 +4,11 @@ body {
 	color: #e0e3e6;
 	padding: 0 8px;
 }
+body img{
+	float: left;
+	max-height: 220px;
+	padding-right: 20px;
+}
 
 main {
 	max-width: 40em;
@@ -27,6 +32,25 @@ a {
 .contact-category {
 	display: inline-block;
 	min-width: 3.5em;
+}
+.top-nav-bar {
+  	overflow: hidden;
+  	margin: 0 -12px;
+}
+.top-nav-bar a {
+	float: left;
+	color: #45a4e8;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.about-main {
+	font: 400 18px/1.75 'Roboto', sans-serif;
+	background: #081823;
+	color: #e0e3e6;
+	padding: 0 8px;
 }
 
 footer {
