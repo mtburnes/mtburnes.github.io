@@ -63,13 +63,3 @@ footer {
 		margin: 1em auto;
 	}
 }
-
-footer {
-    float: right;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-	padding: 10px 0px;
-	font-size: 10pt;
-}
