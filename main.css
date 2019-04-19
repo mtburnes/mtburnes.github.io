@@ -1,5 +1,5 @@
 body {
-	font: 400 18px/1.75 'Roboto', sans-serif;
+	font: 500 18px/1.75 'Barlow', sans-serif;
 	background: #081823;
 	color: #e0e3e6;
 	padding: 0 8px;
@@ -8,6 +8,12 @@ body img{
 	float: left;
 	max-height: 220px;
 	padding-right: 20px;
+}
+
+body p,span{
+	font: 500 18.1px/1.5 'Barlow', sans-serif;
+	background: #081823;
+	color: #e0e3e6;
 }
 
 main {
